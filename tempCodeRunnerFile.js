@@ -1,35 +1,20 @@
-/*
- * function takes an array as parameter.
- * give me the average of the odd numbers in the array.
- */
+/* 
+Even number of array average.
+*/
 
-/*
- * 1. Put odd numbers in an array.
- */
+function evenAverage(numbers) {
+  const even = [];
+  for (number of numbers) {
+    if (number % 2 === 0) {
+      console.log(number);
 
-function oddAverage(numbers) {
-  const odds = [];
-  for (const number of numbers) {
-    if (number % 2 == 1) {
-      // console.log(number);
-      odds.push(number);
+      even.push(number);
     }
   }
-  // odds is the array that contains only the odd numbers
-  //   console.log(odds);
-  let sum = 0;
-  for (const number of odds) {
-    sum = sum + number;
-  }
-  const count = odds.length;
-  console.log(sum);
-
-  const avg = sum / count;
-
-  return avg;
+  console.log(even);
 }
 
-const numbers = [42, 13, 58, 65, 81, 96, 7];
+const numbers = [42, 13, 58, 65, 81, 96, 7, 5];
+const avg = evenAverage(numbers);
 
-const avg = oddAverage(numbers);
-// console.log("average of the odd numbers is: ", avg);
+console.log(avg);
