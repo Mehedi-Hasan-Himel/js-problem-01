@@ -22,14 +22,14 @@ function oddAverage(numbers) {
     sum = sum + number;
   }
   const count = odds.length;
-  console.log(sum);
+//   console.log(sum);
 
   const avg = sum / count;
 
   return avg;
 }
 
-const numbers = [42, 13, 58, 65, 81, 96, 7];
+const numbers = [42, 13, 58, 65, 81, 96, 7,5];
 
 const avg = oddAverage(numbers);
 // console.log("average of the odd numbers is: ", avg);
